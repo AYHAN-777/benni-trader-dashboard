@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "mode": "paper",
+  "market": "BTC/TRY",
+  "currency": "TRY",
+  "source": "github-paper-bot",
+  "updated_at": "2026-10-23T06:49:56.106Z",
+  "initial_capital": 10000,
+  "equity": 9997.03,
+  "cash": 8000,
+  "btc": 0.0004914004914004914,
+  "last_price": 4068020,
+  "entry": 4065930,
+  "stop": 3984611.4,
+  "target": 4228567.2,
+  "risk_halt": false,
+  "trades": [
+    {
+      "time": "2026-10-23T02:40:31.738Z",
+      "action": "BUY",
+      "price": 4065930,
+      "budget_tl": 2000,
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-22T14:56:43.602Z",
+      "event": "HOLD",
+      "price_tl": 4059293,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T15:42:54.539Z",
+      "event": "HOLD",
+      "price_tl": 4045295,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T16:42:39.320Z",
+      "event": "HOLD",
+      "price_tl": 4041953,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T17:38:29.358Z",
+      "event": "HOLD",
+      "price_tl": 4035306,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T18:46:30.027Z",
+      "event": "HOLD",
+      "price_tl": 4031453,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T19:42:06.209Z",
+      "event": "HOLD",
+      "price_tl": 4035953,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T20:40:07.004Z",
+      "event": "HOLD",
+      "price_tl": 4030241,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T21:39:09.547Z",
+      "event": "HOLD",
+      "price_tl": 4046277,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T22:38:19.894Z",
+      "event": "HOLD",
+      "price_tl": 4043601,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-22T23:38:26.418Z",
+      "event": "HOLD",
+      "price_tl": 4038658,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-23T00:54:32.287Z",
+      "event": "HOLD",
+      "price_tl": 4048081,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-23T01:45:26.786Z",
+      "event": "HOLD",
+      "price_tl": 4044550,
+      "equity_tl": 10000
+    },
+    {
+      "time": "2026-10-23T02:40:31.738Z",
+      "event": "BUY",
+      "price_tl": 4065930,
+      "equity_tl": 9996
+    },
+    {
+      "time": "2026-10-23T03:41:21.629Z",
+      "event": "HOLD",
+      "price_tl": 4065906,
+      "equity_tl": 9995.99
+    },
+    {
+      "time": "2026-10-23T04:40:06.357Z",
+      "event": "HOLD",
+      "price_tl": 4059516,
+      "equity_tl": 9992.85
+    },
+    {
+      "time": "2026-10-23T05:39:57.556Z",
+      "event": "HOLD",
+      "price_tl": 4060807,
+      "equity_tl": 9993.49
+    },
+    {
+      "time": "2026-10-23T06:49:56.106Z",
+      "event": "HOLD",
+      "price_tl": 4068020,
+      "equity_tl": 9997.03
+    }
+  ]
+}
