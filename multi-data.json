@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "mode": "paper",
+  "currency": "USD",
+  "market": "MULTI",
+  "updated_at": "2026-10-23T08:10:16.145637+00:00",
+  "initial_capital": 10000,
+  "equity": 10000,
+  "cash": 10000,
+  "risk_halt": false,
+  "prices": {
+    "BTC": 81538,
+    "ETH": 2400.19,
+    "SOL": 104.39,
+    "XRP": 1.32,
+    "BNB": 744.7,
+    "ADA": 0.216008,
+    "LINK": 12.16,
+    "AVAX": 9.26,
+    "DOGE": 0.0799,
+    "DOT": 1.19
+  },
+  "positions": {},
+  "trades": [],
+  "events": [
+    {
+      "time": "2026-10-23T08:10:16.145637+00:00",
+      "equity_usd": 10000
+    }
+  ]
+}
