@@ -3,29 +3,49 @@
   "mode": "paper",
   "currency": "USD",
   "market": "MULTI",
-  "updated_at": "2026-10-23T08:10:16.145637+00:00",
+  "updated_at": "2026-10-23T09:10:42.287591+00:00",
   "initial_capital": 10000,
-  "equity": 10000,
-  "cash": 10000,
+  "equity": 9998,
+  "cash": 9000,
   "risk_halt": false,
   "prices": {
-    "BTC": 81538,
-    "ETH": 2400.19,
-    "SOL": 104.39,
+    "BTC": 81699,
+    "ETH": 2403.81,
+    "SOL": 104.45,
     "XRP": 1.32,
-    "BNB": 744.7,
-    "ADA": 0.216008,
+    "BNB": 744.31,
+    "ADA": 0.216289,
     "LINK": 12.16,
-    "AVAX": 9.26,
-    "DOGE": 0.0799,
+    "AVAX": 9.27,
+    "DOGE": 0.080339,
     "DOT": 1.19
   },
-  "positions": {},
-  "trades": [],
+  "positions": {
+    "DOGE": {
+      "quantity": 12434.80750320517,
+      "cost": 1000,
+      "entry": 0.080339,
+      "stop": 0.07873221999999999,
+      "target": 0.08355256
+    }
+  },
+  "trades": [
+    {
+      "time": "2026-10-23T09:10:42.287591+00:00",
+      "symbol": "DOGE",
+      "action": "BUY",
+      "price_usd": 0.080339,
+      "budget_usd": 1000
+    }
+  ],
   "events": [
     {
       "time": "2026-10-23T08:10:16.145637+00:00",
       "equity_usd": 10000
+    },
+    {
+      "time": "2026-10-23T09:10:42.287591+00:00",
+      "equity_usd": 9998
     }
   ]
 }
