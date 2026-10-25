@@ -43,7 +43,8 @@ test('risk stop and historical replay remain distinct', () => {
   const historical=clone(); historical.synthetic=false; assert.match(api.health(historical,now).label,/HISTORISCHER/);
 });
 class Element {
-  constructor() { this.children=[]; this.textContent=''; this.className=''; this.hidden=false; }
+  constructor() { this.children=[]; this.textContent=''; this.className=''; this.hidden=false; this.listeners={}; }
+  addEventListener(name, handler) { this.listeners[name]=handler; }
   append(x) { this.children.push(x); }
   replaceChildren() { this.children=[]; }
   set innerHTML(value) { throw Error('HTML injection sink used'); }
@@ -77,4 +78,36 @@ test('passive and risk-managed comparisons are distinct required metrics', () =>
   const doc=dom(); api.render(clone(),doc,now);
   assert.equal(doc.getElementById('branch-rows').children[1].children[0].textContent,'Always-long mit Risikolimits');
   assert.equal(doc.getElementById('fold-rows').children[0].children.length,9);
+});
+test('invalid local import error persists across freshness timer', async () => {
+  const originalFetch=global.fetch, originalTimer=global.setInterval;
+  let tick;
+  global.fetch=async()=>({ok:true,text:async()=>JSON.stringify(clone())});
+  global.setInterval=callback=>{tick=callback;return 1;};
+  try {
+    const doc=dom(); api.mount(doc);
+    await new Promise(resolve=>setImmediate(resolve));
+    const change=doc.getElementById('paper-file').listeners.change;
+    await change({target:{files:[{name:'good.json',size:100,text:async()=>JSON.stringify(clone())}]}});
+    await change({target:{files:[{name:'bad.json',size:4,text:async()=>'bad!'}]}});
+    const error=doc.getElementById('paper-status').textContent;
+    assert.equal(doc.getElementById('paper-status').className,'status error');
+    tick();
+    assert.equal(doc.getElementById('paper-status').textContent,error);
+  } finally { global.fetch=originalFetch;global.setInterval=originalTimer; }
+});
+test('slow initial network response cannot overwrite a newer local import', async () => {
+  const originalFetch=global.fetch, originalTimer=global.setInterval;
+  let release;
+  global.fetch=()=>new Promise(resolve=>{release=resolve;});
+  global.setInterval=()=>1;
+  try {
+    const doc=dom(); api.mount(doc);
+    const local=clone(); local.symbol='LOCAL-FIXTURE';
+    await doc.getElementById('paper-file').listeners.change({target:{files:[{name:'local.json',size:100,text:async()=>JSON.stringify(local)}]}});
+    release({ok:true,text:async()=>JSON.stringify(clone())});
+    await new Promise(resolve=>setImmediate(resolve));
+    assert.equal(doc.getElementById('symbol').textContent,'LOCAL-FIXTURE');
+    assert.match(doc.getElementById('loaded-from').textContent,/Lokal geladen/);
+  } finally {global.fetch=originalFetch;global.setInterval=originalTimer;}
 });

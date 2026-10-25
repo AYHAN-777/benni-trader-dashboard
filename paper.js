@@ -95,9 +95,9 @@
     doc.getElementById('fold-empty').hidden = s.walk_forward.folds.length > 0;
   }
   function mount(doc) {
-    let saved = null, local = false, busy = false, version = 0;
-    const showError = message => { const el = doc.getElementById('paper-status'); el.className = 'status error'; el.textContent = message; };
-    const accept = s => { validate(s); render(s, doc); saved = s; };
+    let saved = null, local = false, busy = false, version = 0, displayError = false;
+    const showError = message => { displayError = true; const el = doc.getElementById('paper-status'); el.className = 'status error'; el.textContent = message; };
+    const accept = s => { validate(s); render(s, doc); saved = s; displayError = false; };
     async function refresh() {
       if (busy) return;
       busy = true;
@@ -123,10 +123,10 @@
         if (importVersion !== version) return;
         accept(JSON.parse(raw)); local = true;
         doc.getElementById('loaded-from').textContent = 'Lokal geladen: ' + file.name + ' · Keine Übertragung an einen Server';
-      } catch (error) { showError(error.message + ' · Vorherige Anzeige nicht erneut bestätigt.'); }
+      } catch (error) { if (importVersion !== version) return; showError(error.message + ' · Vorherige Anzeige nicht erneut bestätigt.'); }
     });
     refresh();
-    setInterval(() => { if (local && saved) render(saved, doc); else refresh(); }, 60000);
+    setInterval(() => { if (local && saved) { if (!displayError) render(saved, doc); } else refresh(); }, 60000);
   }
   const api = {validate, health, render, mount};
   if (typeof module === 'object' && module.exports) module.exports = api;

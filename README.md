@@ -52,7 +52,9 @@ Node's built-in test runner checks schema rejection, freshness, halted states,
 chronological boundaries and rendering through text-only DOM sinks. These are
 unit/rendering tests, not a real-browser visual or accessibility certification.
 
-Actual local validation during implementation: 13 Node tests passed and
+Actual local validation during implementation: 15 Node tests passed and
 `node --check paper.js` passed. A Playwright browser smoke test was attempted but
-could not launch because the Chromium executable is not installed in this runtime;
+could not launch because the Chromium executable is not installed in this runtime.
+Both the standard installer and the runtime-matched Playwright installer were
+attempted; browser downloads returned invalid/truncated ZIP archives. Therefore
 no browser screenshots or visual certification are claimed.
