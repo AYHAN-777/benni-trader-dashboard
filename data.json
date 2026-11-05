@@ -4,12 +4,12 @@
   "market": "BTC/TRY",
   "currency": "TRY",
   "source": "github-paper-bot",
-  "updated_at": "2026-11-04T23:48:08.721749+00:00",
+  "updated_at": "2026-11-05T01:11:17.712397+00:00",
   "initial_capital": 10000,
-  "equity": 9934.3,
+  "equity": 9931.07,
   "cash": 7942.59039601728,
   "btc": 0.0004942058201516257,
-  "last_price": 4034156,
+  "last_price": 4027609,
   "entry": 4042850,
   "stop": 3961993,
   "target": 4204564,
@@ -19,59 +19,53 @@
       "time": "2026-10-23T02:40:31.738492+00:00",
       "action": "BUY",
       "price": 4065930,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-10-24T15:39:14.806517+00:00",
       "action": "SELL",
       "price": 3948345,
-      "pnl_tl": -61.72,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -61.72
     },
     {
       "time": "2026-10-24T17:36:48.809375+00:00",
       "action": "BUY",
       "price": 3981912,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-10-30T01:04:20.983409+00:00",
       "action": "SELL",
       "price": 3846383,
-      "pnl_tl": -71.93,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -71.93
     },
     {
       "time": "2026-10-30T02:53:48.924674+00:00",
       "action": "BUY",
       "price": 3854416,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-11-04T15:59:31.999057+00:00",
       "action": "SELL",
       "price": 4009373,
-      "pnl_tl": 76.25,
-      "reason": "TARGET"
+      "reason": "TARGET",
+      "pnl_tl": 76.25
     },
     {
       "time": "2026-11-04T22:53:58.449095+00:00",
       "action": "BUY",
       "price": 4042850,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     }
   ],
   "events": [
-    {
-      "time": "2026-10-31T13:50:02.339534+00:00",
-      "event": "HOLD",
-      "price_tl": 3867393,
-      "equity_tl": 9869.07
-    },
     {
       "time": "2026-10-31T14:42:38.080974+00:00",
       "event": "HOLD",
@@ -665,6 +659,12 @@
       "event": "HOLD",
       "price_tl": 4034156,
       "equity_tl": 9934.3
+    },
+    {
+      "time": "2026-11-05T01:11:17.712397+00:00",
+      "event": "HOLD",
+      "price_tl": 4027609,
+      "equity_tl": 9931.07
     }
   ]
 }
