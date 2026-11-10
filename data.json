@@ -4,12 +4,12 @@
   "market": "BTC/TRY",
   "currency": "TRY",
   "source": "github-paper-bot",
-  "updated_at": "2026-11-10T02:56:37.765788+00:00",
+  "updated_at": "2026-11-10T03:56:48.335291+00:00",
   "initial_capital": 10000,
-  "equity": 9810.75,
+  "equity": 9800.79,
   "cash": 7819.148270572408,
   "btc": 0.0005303454199709292,
-  "last_price": 3759058,
+  "last_price": 3740255,
   "entry": 3767356,
   "stop": 3692008.88,
   "target": 3918050.24,
@@ -19,87 +19,81 @@
       "time": "2026-10-23T02:40:31.738492+00:00",
       "action": "BUY",
       "price": 4065930,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-10-24T15:39:14.806517+00:00",
       "action": "SELL",
       "price": 3948345,
-      "pnl_tl": -61.72,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -61.72
     },
     {
       "time": "2026-10-24T17:36:48.809375+00:00",
       "action": "BUY",
       "price": 3981912,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-10-30T01:04:20.983409+00:00",
       "action": "SELL",
       "price": 3846383,
-      "pnl_tl": -71.93,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -71.93
     },
     {
       "time": "2026-10-30T02:53:48.924674+00:00",
       "action": "BUY",
       "price": 3854416,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-11-04T15:59:31.999057+00:00",
       "action": "SELL",
       "price": 4009373,
-      "pnl_tl": 76.25,
-      "reason": "TARGET"
+      "reason": "TARGET",
+      "pnl_tl": 76.25
     },
     {
       "time": "2026-11-04T22:53:58.449095+00:00",
       "action": "BUY",
       "price": 4042850,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-11-05T15:03:10.198815+00:00",
       "action": "SELL",
       "price": 3900910,
-      "pnl_tl": -74.08,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -74.08
     },
     {
       "time": "2026-11-06T10:08:45.447331+00:00",
       "action": "BUY",
       "price": 3815654,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     },
     {
       "time": "2026-11-08T22:44:05.232444+00:00",
       "action": "SELL",
       "price": 3728925,
-      "pnl_tl": -49.37,
-      "reason": "STOP"
+      "reason": "STOP",
+      "pnl_tl": -49.37
     },
     {
       "time": "2026-11-08T23:42:50.918148+00:00",
       "action": "BUY",
       "price": 3767356,
-      "budget_tl": 2000,
-      "reason": "PRICE_MOMENTUM_0.5_PERCENT"
+      "reason": "PRICE_MOMENTUM_0.5_PERCENT",
+      "budget_tl": 2000
     }
   ],
   "events": [
-    {
-      "time": "2026-11-05T16:08:18.527766+00:00",
-      "event": "HOLD",
-      "price_tl": 3793256,
-      "equity_tl": 9868.51
-    },
     {
       "time": "2026-11-05T17:20:48.701424+00:00",
       "event": "HOLD",
@@ -693,6 +687,12 @@
       "event": "HOLD",
       "price_tl": 3759058,
       "equity_tl": 9810.75
+    },
+    {
+      "time": "2026-11-10T03:56:48.335291+00:00",
+      "event": "HOLD",
+      "price_tl": 3740255,
+      "equity_tl": 9800.79
     }
   ]
 }
