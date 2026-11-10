@@ -4,12 +4,12 @@
   "market": "BTC/TRY",
   "currency": "TRY",
   "source": "github-paper-bot",
-  "updated_at": "2026-11-10T13:09:05.609541+00:00",
+  "updated_at": "2026-11-10T14:20:03.735679+00:00",
   "initial_capital": 10000,
-  "equity": 9795.66,
+  "equity": 9781.6,
   "cash": 7819.148270572408,
   "btc": 0.0005303454199709292,
-  "last_price": 3730564,
+  "last_price": 3704036,
   "entry": 3767356,
   "stop": 3692008.88,
   "target": 3918050.24,
@@ -94,12 +94,6 @@
     }
   ],
   "events": [
-    {
-      "time": "2026-11-06T02:21:08.700187+00:00",
-      "event": "HOLD",
-      "price_tl": 3815951,
-      "equity_tl": 9868.51
-    },
     {
       "time": "2026-11-06T03:58:20.249110+00:00",
       "event": "HOLD",
@@ -693,6 +687,12 @@
       "event": "HOLD",
       "price_tl": 3730564,
       "equity_tl": 9795.66
+    },
+    {
+      "time": "2026-11-10T14:20:03.735679+00:00",
+      "event": "HOLD",
+      "price_tl": 3704036,
+      "equity_tl": 9781.6
     }
   ]
 }
